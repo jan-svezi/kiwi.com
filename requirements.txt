@@ -1,0 +1,14 @@
+# API & Server
+fastapi >=0.115.6
+uvicorn >=0.34.0
+
+# Persistence
+sqlalchemy >=2.0.37
+
+# Configuration & Validation
+pydantic >=2.10.6
+
+# Testing & Coverage
+pytest >=8.3.4
+httpx >=0.28.1
+pytest-cov>=6.0.0
