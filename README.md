@@ -104,3 +104,4 @@ pytest --cov=backend --cov-report=html
 * **Authentication & Authorization:** Add JWT / API Key authentication to protect parser and data retrieval routes.
 * **Asynchronous Processing:** For heavy multi-segment PDF decoding, consider offloading processing to asynchronous task queues (e.g., Celery / Redis).
 * **Docker Containerization:** Add a multi-stage `Dockerfile` and `docker-compose.yml` for unified container deployment.
+* **IATA Boarding Pass Field Expansion:** The current domain models are intentionally trimmed to match the required API response payload. The parser architecture is designed so that additional optional IATA Resolution 792 fields (e.g., security data, baggage allowance, frequent flyer info, fast-track status) can be seamlessly exposed as domain requirements grow.
